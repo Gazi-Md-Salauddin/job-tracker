@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Job Application Tracker</title>
+  <!--font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+<style>
+  font-family: "Geist", sans-serif;
+</style>
+
+<!--tailwind-->
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<!--font awesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-gray-100">
+  <header class="w-[80%] md:w-[80%] mx-auto pt-5">
+    <h1 class="text-3xl font-bold mb-5">Job Application Tracker</h1>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      
+      <div id="total" class="p-20 bg-white rounded-lg">
+        <p class="text-2xl text-[#323B49] font-medium">Total</p>
+        <p class="text-2xl font-bold pt-4">8</p>
+      </div>
+      
+      <div id="interview" class="p-20 bg-white rounded-lg">
+        <p class="text-2xl text-[#323B49] font-medium">Interview</p>
+        <p class="text-2xl text-green-500 font-bold pt-4">0</p>
+      </div>
+      
+      <div id="rejected" class="p-20 bg-white rounded-lg">
+        <p class="text-2xl text-[#323B49] font-medium">Rejected</p>
+        <p class="text-2xl text-red-500 font-bold pt-4">0</p>
+      </div>
+    </div>
+  </header>
+  <hr class="my-10">
+  
+  <main id="allcards" class="w-[80%] mx-auto">
+    <div class="flex justify-between mb-5">
+      <h2 class="text-xl font-semibold">Available Jobs</h2>
+     <p class="text-gray-500">8 jobs</p>
+    </div>
+     
+     <div class="gap-x-6">
+       <button class="bg-sky-500 text-white px-5 py-2 rounded-sm" id="all-btn">All</button>
+       <button class="bg-white text-gray-500 px-5 py-2 rounded-sm" id="interview-btn">Interview</button>
+       <button class="bg-white text-gray-500 px-5 py-2 rounded-sm" id="rejected-btn">Rejected</button>
+     </div>
+     
+     <section>
+       <div class="card flex justify-between bg-white mt-5 p-5">
+           <div class="left">
+             <p class="text-[#002C5C] font-semibold text-lg">Mobile First Corp</p>
+           <p class="text-gray-500">React Native Developer</p>
+           
+           
+           <p class="text-gray-500 text-sm/20">Remote • Full time • $130,000- $175,000</p>
+           <span class="bg-gray-300 text-sm font-medium px-6 py-4 rounded-sm inline-block">NOT APPLIED</span>
+           <p class="text-sm/20">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+           <button class="text-green-500 border  border-green-500 rounded-sm px-4 py-2 mr-4">Interview</button>
+           <button class="text-red-500 border border-red-500 rounded-sm px-4 py-2">Rejected</button>
+         </div>
+         <div class="right">
+           <span class=""><i class="fa-regular fa-trash-can"></i></span>
+         </div>
+       </div>
+     </section>
+  </main>
+  
+  <script src="script.js"></script>
+</body>
+</html>
