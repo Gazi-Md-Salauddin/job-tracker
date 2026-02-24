@@ -29,6 +29,19 @@ It more flexible
 
 
 2.
-•Create a new element 
-•Add content or attributes
-•Insert it into the DOM 
+• Create a new element 
+• Add content or attributes
+• Insert it into the DOM 
+
+3. 
+Event bubbling is a concept in the DOM where an event starts from the target element and then "bubbles up" to its parent element one by and.
+
+When user click on a child element, the event first run on that element, then on its parent, then the parents parent all the way up to the document. 
+Example:
+<button id="btn">click here</button>
+
+document.getElementById('btn').addEventListener("click", function(){
+  console.log("button clicked");
+});
+Output console:
+button clicked
