@@ -96,7 +96,7 @@ function renderJobs() {
     card.className = "bg-white p-4 rounded";
 
     card.innerHTML = `
-      <div class="flex justify-between items-start">
+      <div class="sm:flex justify-between items-start">
         <div>
           <h2 class="font-bold">${job.company}</h2>
           <p class="text-sm text-gray-500">${job.role}</p>
