@@ -45,3 +45,7 @@ document.getElementById('btn').addEventListener("click", function(){
 });
 Output console:
 button clicked
+
+4.
+Event Delegation is a technique where you attach a single event listener to a parent element instead of adding event listeners to multiple child elements.
+It is very useful because better performance, works for dynamic element, cleaner and shorter code.
