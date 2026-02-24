@@ -49,3 +49,14 @@ button clicked
 4.
 Event Delegation is a technique where you attach a single event listener to a parent element instead of adding event listeners to multiple child elements.
 It is very useful because better performance, works for dynamic element, cleaner and shorter code.
+
+5.
+preventDefault()
+
+It prevents the browser's default behavior of an element.
+It does not stop event bubbling.
+
+stopPropagation()
+
+It stops the event from bubbling up to parent elements.
+It does not stop default behavior.
